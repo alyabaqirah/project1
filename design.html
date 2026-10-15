@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>HOMEPAGE MITC HOTEL</title>
+        <link rel="stylesheet" href="stylee.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img src="logomitc.png" alt= "Logo" class = "logo">
+        <header class="header">
+            <a href="#" class="logo"></a>
+            <nav class="navbar">
+                <a href ="design.html" class="active">Home</a>
+                <a href ="login.php" action="login.php">Login</a>
+                <a href ="adminSignup.php">Register</a>
+            </nav>
+
+            <div class="social-media">
+            <a href ="error.php"><i class='bx bxs-phone-call'></i></a>
+            <a href ="https://linktr.ee/mitchotelmelaka?utm_source=linktree_profile_share&ltsid=79527ec3-b098-451b-a6c5-032e90fe36e4"><i class='bx bx-link'></i></a>
+            <a href ="https://www.instagram.com/mitchotel?igsh=MW9ma2Zjc3JzaXp2"><i class='bx bxl-instagram'></i></a>
+        </div>
+        </header>
+
+        <section class="home">
+            <div class="overlay"></div>
+            <div class="home-content">
+                <h1>MITC HOTEL</h1>
+                <h3>PAYROLL MANAGEMENT SYSTEM</h3>
+                <p> A payroll management system website simplifies HR tasks by automating salary calculations, tax deductions, and benefits management. It ensures timely and accurate payroll processing, reduces administrative workload, and enhances compliance with regulations. User-friendly interfaces and robust reporting features make it an indispensable tool for efficient HR management. </p>
+                <a href="login.php" class="btn">START</a>
+                
+            </div>
+            
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <img src="slideshow1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="slideshow2.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="slideshow3.jpg" style="width:100%">
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); //gambar bertukar every 3 saat
+            }
+            </script>
+            
+
+    </body>
+</html>
